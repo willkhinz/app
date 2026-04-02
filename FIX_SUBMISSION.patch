@@ -1,0 +1,50 @@
+```jsx
+// Update the button element to include a dialog role and title
+<div
+  aria-label="App download links"
+  role="dialog"
+  aria-labelledby="app-download-links-title"
+  data-tag="pressable"
+  tabindex="0"
+  class="css-g5y9jx r-1otgn73 r-1loqt21 r-17gur6a r-18u37iz r-1wtj0ep r-1mmae3n r-o4dypm r-1fkl15p r-iyfy8q"
+>
+  <div class="css-g5y9jx r-13awgt0">
+    <div class="css-g5y9jx r-18u37iz">
+      <div class="css-g5y9jx r-eqz5dr r-13awgt0">
+        <div class="css-g5y9jx r-18u37iz r-105ug2t">
+          <div class="css-g5y9jx r-1awozwy r-1777fci" style="width: 40px;">
+            <div class="css-g5y9jx" data-testid="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                viewBox="0 0 20 20"
+                width="20"
+                height="20"
+                hovered="false"
+                pressed="false"
+                fill="#A2A9A3"
+              >
+                <path d="M17.5 2.5c-2-2-5.1-2-7.1 0l-.4.4c-.6.6-.6 1.5 0 2.1s1.5.6 2.1 0l.4-.4c.8-.8 2-.8 2.8 0s.8 2 0 2.8l-2.8 2.8c-1 1-2.1.7-2.8 0l-2.1 2.1c1.8 1.8 4.9 2.1 7.1 0l2.8-2.8c2-1.8 2-5 0-7"></path>
+                <path d="M2.7 17.4c2 2 5.1 2 7.1 0l.4-.4c.6-.6.6-1.5 0-2.1s-1.5-.6-2.1 0l-.4.4c-.8.8-2 .8-2.8 0s-.8-2 0-2.8l2.8-2.8c1-1 2.1-.7 2.8 0l2.1-2.1c-1.8-1.8-4.9-2.1-7.1 0l-2.8 2.8c-2 1.9-2 5 0 7"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="css-g5y9jx r-1777fci r-13awgt0" style="min-height: 40px;">
+            <div class="css-g5y9jx r-18u37iz r-1awozwy r-dnmrzs">
+              <div
+                id="app-download-links-title"
+                dir="auto"
+                data-selection-scrapper-hidden-element="false"
+                class="css-146c3p1 r-1udh08x r-1udbk01 r-1iln25a"
+                style="color: rgb(0, 46, 34); font-size: 15px; text-align: left; font-family: &quot;Expensify Neue&quot;, &quot;Windows Segoe UI Emoji&quot;, &quot;Noto Color Emoji&quot;, &quot;Custom Emoji Font&quot;; font-style: normal; font-weight: 700; flex-shrink: 1; margin-left: 12px; white-space: pre; direction: ltr; max-width: 100%; line-height: 20px;"
+              >
+                App download links
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
