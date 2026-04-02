@@ -1,0 +1,50 @@
+```javascript
+// Add live region for errors/status/suggestions
+function addLiveRegion(element, message) {
+  const liveRegion = document.createElement('div');
+  liveRegion.setAttribute('role', 'status');
+  liveRegion.setAttribute('aria-live', 'polite');
+  liveRegion.setAttribute('aria-atomic', 'true');
+  liveRegion.textContent = message;
+  element.appendChild(liveRegion);
+}
+
+// Fix error message not announced
+const errorElement = document.getElementById('error-message');
+if (errorElement) {
+  addLiveRegion(errorElement, errorElement.textContent);
+}
+
+// Fix updated error message not announced during typing
+const inputElement = document.getElementById('input-field');
+inputElement.addEventListener('input', () => {
+  const errorMessage = inputElement.nextElementSibling;
+  if (errorMessage) {
+    addLiveRegion(errorMessage, errorMessage.textContent);
+  }
+});
+
+// Fix informative icon before error message not announced
+const iconElement = document.querySelector('.informative-icon');
+if (iconElement) {
+  const errorMessage = iconElement.nextElementSibling;
+  if (errorMessage) {
+    addLiveRegion(errorMessage, `${iconElement.getAttribute('aria-label')} ${errorMessage.textContent}`);
+  }
+}
+
+// Fix status message of no results not announced
+const statusElement = document.getElementById('status-message');
+if (statusElement) {
+  addLiveRegion(statusElement, statusElement.textContent);
+}
+
+// Fix error message not associated with field
+const fieldElement = document.getElementById('field');
+if (fieldElement) {
+  const errorMessage = fieldElement.nextElementSibling;
+  if (errorMessage) {
+    fieldElement.setAttribute('aria-describedby', errorMessage.id);
+  }
+}
+```
